@@ -1,0 +1,33 @@
+/* src/styles.css */
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.CodeMirror {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.cursor-1 {
+  border-left: 2px solid red;
+  animation: blink 1s step-end infinite;
+}
+
+.cursor-2 {
+  border-left: 2px solid blue;
+  animation: blink 1s step-end infinite;
+}
+
+/* Add more styles for additional cursors as needed */
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: inherit;
+  }
+}
