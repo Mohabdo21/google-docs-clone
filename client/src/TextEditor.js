@@ -72,7 +72,7 @@ export default function TextEditor() {
       }
       setTimeout(() => {
         isTyping.current = false;
-      }, 50); // Small delay to reduce flickering
+      }, 0); // Small delay to reduce flickering
     },
     [doc],
   );
